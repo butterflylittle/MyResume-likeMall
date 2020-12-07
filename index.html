@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>吴汇森-Web前端简历</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--头部区域开始-->
+    <div id="header" class="middle">
+      <a href="#" class="logo"><img src="./img/logo.jpg" alt="" /></a>
+      <div class="explain" id="explain">
+        <a href="./img/onmouseover1.png" class="header-list list1"
+          ><img src="./img/guangzhou.gif" alt=""
+        /></a>
+        <a href="./img/onmouseover2.jpg" class="header-list list2"
+          ><img src="./img/qianduan.gif" alt=""
+        /></a>
+        <a href="./img/onmouseover3.png" class="header-list list3"
+          ><img src="./img/gongzi.gif" alt=""
+        /></a>
+      </div>
+      <a href="" class="phone-nub"
+        ><img src="./img/phoneNumber.jpg" alt=""
+      /></a>
+    </div>
+    <!--头部区域结束-->
+
+    <!--导航条开始-->
+    <div class="nav-background">
+      <div id="nav" class="middle">
+        <ul>
+          <li>首页</li>
+          <li>
+            <a href="https://github.com/butterflylittle" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li broszhu="true">
+            <a
+              href="https://juejin.cn/user/2348212569512974/posts"
+              target="_blank"
+              broszhu="true"
+              >个人博客</a
+            >
+          </li>
+          <li id="contact">联系方式</li>
+        </ul>
+        <div id="nav-div2" broszhu="true">
+          <a href="" target="_blank" broszhu="true">博客首页</a>
+          <a href="" target="_blank" broszhu="true">前端DEMO</a>
+          <a href="" target="_blank" broszhu="true">后端DEMO</a>
+        </div>
+        <div id="contactInformation">
+          <a href="javascript:;" class="advice">博客：juejin</a>
+          <a href="javascript:;" class="email">邮箱：</a>
+          <a href="javascript:;" class="phone">电话：13710610218</a>
+        </div>
+      </div>
+    </div>
+    <!--导航条结束-->
+
+    <!--商品展示区域开始-->
+    <div id="myDisplay" class="middle">
+      <div class="left">
+        <ul id="displayHeader">
+          <li class="select"><img src="img/li1.jpg" alt="" /></li>
+          <li class=""><img src="img/li2.jpg" alt="" /></li>
+          <li class=""><img src="img/li3.jpg" alt="" /></li>
+          <li class=""><img src="img/li5.jpg" alt="" /></li>
+        </ul>
+        <ul id="displayBody">
+          <li id="tab" class="select">
+            <img src="img/smallPeony.jpg" id="img1" />
+          </li>
+          <li class="" id="toMove2">
+            <img src="img/myphoto2.jpg" alt="我的图片第2张" />
+          </li>
+          <li class="" id="toMove3">
+            <img src="img/myphoto3.jpg" alt="我的图片第3张" />
+          </li>
+          <li class="" id="toMove5">
+            <img src="img/myphoto5.jpg" alt="我的图片第5张" />
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="title">
+          <p>WEB前端开发 JavaScript基础扎实 熟悉Vue框架开发</p>
+          <span>目标公司类型：</span>
+        </div>
+        <div class="price">
+          <p class="introduces mall-price">价格</p>
+          <div class="price-number">¥<b>10000.00</b></div>
+          <div id="rent" class="blue-font">
+            /每月租金
+            <a href="javascripy:;">?</a>
+          </div>
+          <div class="introduces xiaoxi1" id="xiaoxi1">
+            此费用为商品的每月租金,使用时请按时续费。
+          </div>
+          <div class="location">
+            <p class="introduces">商品所在地</p>
+            <p href="javascripy:;" class="city">广州市</p>
+          </div>
+        </div>
+        <div class="deliver-goods">
+          <div class="one">
+            <p class="introduces">配送</p>
+            <div class="destination right-right">
+              <div class="little-font">广州</div>
+              <div class="introduces">至</div>
+              <div class="province">
+                <select id="province"></select>
+                <select id="city"></select>
+                <select id="area"></select>
+              </div>
+              <div class="little-font">有货</div>
+              <div id="distributionTime" class="blue-font">
+                /配送时间
+                <a href="javascripy:;">?</a>
+                <div class="introduces" id="xiaoxi2">
+                  约定时间发货，如有意外，会提前通知
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="two">
+            <a class="introduces">运费</a>
+            <div class="little-font right-right">免运费　</div>
+          </div>
+        </div>
+        <div class="buy">
+          <div class="one">
+            <p class="introduces">属性</p>
+            <p class="web right-right">
+              WEB前端开发 <img src="./img/dui.png" alt="" />
+            </p>
+          </div>
+          <div class="two">
+            <p class="introduces">数量</p>
+            <div id="mallNum" class="right-right">
+              <span class="reduce mallNumStyle">-</span>
+              <span class="content">1</span>
+              <span class="plus mallNumStyle">+</span>
+            </div>
+          </div>
+          <div class="three introduces">
+            <p class="introduces">备注</p>
+            <p class="right-right" id="flag">促销商品，仅一件，多拍不发货！</p>
+          </div>
+          <div class="four"></div>
+        </div>
+        <div class="buyNowdiv">
+          <a href="javascript:;" class="buyNow">立即购买</a>
+        </div>
+      </div>
+    </div>
+    <!--商品展示区域结束-->
+
+    <!--第二个导航条区域开始-->
+    <div id="twoNav" class="middle">
+      <a href="#twoNav" class="nav select">个人简介</a>
+      <a href="#skillsSummaryFlag" class="nav">技能总结</a>
+      <a href="#FEDEMOFlag" class="nav">前端演示</a>
+      <a href="#menu" class="nav">工作经历</a>
+      <div class="simple">
+        <div class="position introduces">
+          <span>吴汇森</span>
+          <span>WEB前端开发</span>
+        </div>
+        <div class="wage">
+          <p class="introduces">¥</p>
+          <p class="price">10000</p>
+        </div>
+      </div>
+      <div class="buyNowdiv">
+        <a href="javascript:;" class="buyNow">立即购买</a>
+      </div>
+    </div>
+    <!--第二个导航条区域结束-->
+
+    <!--个人简介和技能书区域开始-->
+    <div id="introduces" class="middle">
+      <div class="left">
+        <img
+          src="./img/chengxuyuan.jpg"
+          alt="我是一名程序员"
+          class="code-dog"
+        />
+        <img src="./img/information.png" alt="信息介绍" class="information" />
+        <ul>
+          <li>
+            <div class="user"></div>
+            <p>吴汇森 / 男 / 1996年</p>
+          </li>
+          <li>
+            <div class="local"></div>
+            <p>广州市增城区（目前所在地）</p>
+          </li>
+          <li>
+            <div class="edu"></div>
+            <p>本科</p>
+          </li>
+          <li>
+            <div class="work"></div>
+            <p>2018年6月参加工作</p>
+          </li>
+          <li>
+            <div class="marry"></div>
+            <p>未婚</p>
+          </li>
+        </ul>
+        <a
+          href="https://github.com/butterflylittle"
+          class="github select-github"
+          target="_blank"
+        ></a>
+        <a
+          href="https://juejin.cn/user/2348212569512974/posts"
+          class="blog select-blog"
+          target="_blank"
+        ></a>
+      </div>
+      <div class="right">
+        <p>技能树/工具</p>
+        <ul id="photolist">
+          <li><img src="./img/skill/html.png" alt="11" /></li>
+          <li><img src="./img/skill/css.png" alt="" /></li>
+          <li><img src="./img/skill/js.png" alt="" /></li>
+          <li><img src="./img/skill/node.png" alt="" /></li>
+          <li><img src="./img/skill/ws.png" alt="" /></li>
+          <li><img src="./img/skill/vue.png" alt="" /></li>
+          <li><img src="./img/skill/react.png" alt="" /></li>
+          <li><img src="./img/skill/git.png" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+    <!--个人简介和技能书区域结束-->
+    <!--个人技能总结区域开始-->
+    <div id="skillsSummaryFlag" class="middle-clear-flag middle"></div>
+    <div id="skillsSummaryBack">
+      <div id="skillsSummary" class="middle">
+        <div class="up">
+          <div class="left"><p>个人总结</p></div>
+          <ul class="right">
+            <li>
+              掌握html，手写符合w3c标准的代码；用div+CSS布局常见页面，还原设计搞；
+            </li>
+            <li>
+              掌握JS继承模式的原理以及JS面向对象中的继承，封装，单例模式，工厂模式，原型模式；
+            </li>
+            <li>
+              掌握模块化开发的思路和原理，提高代码的复用性，可针对项目实际进行模块化开发，具备工程化的思维和实践经验；
+            </li>
+            <li>熟悉Vue开发框架，具备搭建前端项目基础架构的能力</li>
+            <li>
+              有使用AJAX技术与后台数据交互的经验，，根据接口文档和后台进行交互；
+            </li>
+            <li>熟悉HTTP协议,了解浏览器和服务器交互机制</li>
+            <li>
+              对Web前端技术有浓厚的兴趣，善用搜索引擎，较强的自学能力和对新技术的追求精神，乐于分享；
+            </li>
+            <li>了解小程序项目开发</li>
+            <li>使用git工具进行团队合作,使用npm，bower包管理工具</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--个人技能总结区域结束-->
+
+    <!--前端DEMO区域开始-->
+    <div id="FEDEMOFlag" class="middle-clear-flag middle"></div>
+    <div id="DEMO">
+      <div class="title-flag">前端作品演示</div>
+      <ul class="demo-list" id="FEDEMOList">
+        <li>
+          <a
+            href=""
+            target="_blank"
+          >
+            <img src="img/FEdemo/FE/demo-list-1.jpg" />
+            <div class="hot_info">
+              <h2 title="标题">DOM事件库</h2>
+              <em></em>
+              <p title="项目描述">主要对DOM的一些操作</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href=""
+            target="_blank"
+          >
+            <img src="img/FEdemo/FE/demo-list-2.jpg" />
+            <div class="hot_info">
+              <h2 title="标题">封装的动画库</h2>
+              <em></em>
+              <p title="项目描述">封装的动画库</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href=""
+            target="_blank"
+          >
+            <img src="img/FEdemo/FE/demo-list-3.jpg" />
+            <div class="hot_info">
+              <h2 title="标题">封装的事件库</h2>
+              <em></em>
+              <p title="项目描述">封装的一个DOM事件库</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href=""
+            target="_blank"
+          >
+            <img src="img/FEdemo/FE/demo-list-4.jpg" />
+            <div class="hot_info">
+              <h2 title="标题">苹果计算器</h2>
+              <em></em>
+              <p title="项目描述">一个简易的苹果计算器在线程序</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Broszhu/douban" target="_blank">
+            <img src="img/FEdemo/FE/demo-list-5.png" />
+            <div class="hot_info">
+              <h2 title="标题">仿MiMall</h2>
+              <em></em>
+              <p title="项目描述">小米商场首页</p>
+            </div>
+          </a>
+        </li>
+        
+    </div>
+
+    <!--前端DEMO区域结束-->
+
+    <!--工作经历区域开始-->
+    <div id="menu" class="middle">
+      <div class="menuTop">
+        <h2>工作经历</h2>
+      </div>
+      <div id="menuBody" class="menuBody">
+        <div class="menu-child">
+          <h3><span class="bg1"></span>2019年10月--2020年</h3>
+          <div class="menu-child-body select">
+            <p>公司：乐金显示光电科技有限公司</p>
+            <p>职位：工艺工程师</p>
+            <p>工作：负责设备的运营；</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--工作经历区域结束-->
+    <!--自我总结区域-->
+    <div id="evaluation">
+      <ul class="middle">
+        <li>
+          <h3>职业素质</h3>
+          <div>
+            <a
+              >态度+执行力是我学习和工作的追求；假如项目中需要用到从未使用过的新技术/新框架，我相信我可以最快速度的用它来干活；喜欢钻研移动端新技术。</a
+            >
+          </div>
+        </li>
+        <li>
+          <h3>入职时间</h3>
+          <div>
+            <a>确定入职后，可随时到岗</a>
+          </div>
+        </li>
+        <li>
+          <h3>岗位期望</h3>
+          <div>
+            <a>全职WEB前端开发</a>
+            <a>双休岗位，不接受单休(紧急项目上线时除外)</a>
+            <a>周一至周五可以接受高强度加班</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+<script src="js/dom.js"></script>
+<script src="js/jsAddress.js"></script>
+<script src="js/index.js"></script>
+<!-- 下面是拖拽的jS-->
+<script src="js/dragJs/event.js"></script>
+<script src="js/dragJs/drag.js"></script>
+<script src="js/dragJs/tween.js"></script>
+<script src="js/dragJs/index.js"></script>

@@ -1,0 +1,911 @@
+html,
+body,
+div,
+ul,
+li,
+a,
+img,
+span,
+p,
+h3,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "微软雅黑", sans-serif;
+  -webkit-user-select: none;
+}
+img {
+  height: auto;
+  border: none;
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+}
+/*头部区域开始*/
+#header {
+  width: 1210px;
+  height: 150px;
+}
+#header .logo {
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+#header .explain {
+  position: absolute;
+  left: 261px;
+  top: 61px;
+}
+#header .explain a.list1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header .explain a.list2 {
+  position: absolute;
+  left: 85px;
+  top: 0;
+}
+#header .explain a.list3 {
+  position: absolute;
+  left: 168px;
+  top: 0;
+}
+#header .phone-nub {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+}
+#tooltip {
+  padding: 1px;
+  position: absolute;
+  display: none;
+  background: #ffffff;
+}
+/*头部区域结束*/
+
+/*导航条开始*/
+.nav-background {
+  width: 100%;
+  height: 50px;
+  background: #3c3c3c;
+  position: relative;
+  z-index: 2;
+}
+#nav {
+  width: 1210px;
+  z-index: 2;
+}
+#nav ul {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #3c3c3c;
+}
+#nav ul li {
+  color: #fff;
+  float: left;
+  padding: 0 10px;
+  cursor: pointer;
+}
+#nav ul li a {
+  color: #fff;
+}
+#nav ul li:hover {
+  background: #101010;
+}
+#nav-div2 {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  border: solid 1px #a9a9a9;
+  border-top: none;
+  border-bottom: none;
+  background: #f9af2a;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+#nav-div2 a {
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  color: darkred;
+  margin: 20px;
+  border: 1px solid #f9af2a;
+}
+#nav-div2 a:hover {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid darkred;
+  background: darkred;
+}
+
+#nav #contactInformation {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  left: 210px;
+  display: none;
+}
+#nav #contactInformation a {
+  width: 220px;
+  height: 50px;
+  display: block;
+  text-align: left;
+  line-height: 50px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+#nav #contactInformation a.phone {
+  background: #162e2e;
+  color: #1bbc9b;
+}
+#nav #contactInformation a.email {
+  background: #312e1f;
+  color: #fdbd1f;
+}
+#nav #contactInformation a.advice {
+  background: #2f2123;
+  color: #c54337;
+}
+/*导航条结束*/
+/*商品展示区域开始*/
+#myDisplay {
+  width: 1210px;
+  height: 630px;
+  margin-top: 38px;
+}
+#myDisplay #displayHeader {
+  position: absolute;
+  top: 460px;
+}
+#myDisplay #displayHeader li {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+  background: lightseagreen;
+  cursor: pointer;
+}
+#myDisplay #displayBody li {
+  width: 449px;
+  height: 449px;
+  display: none;
+  position: relative;
+}
+#myDisplay #displayBody #img1 {
+  width: 449px;
+  height: 449px;
+  display: block;
+}
+#myDisplay #displayBody li.select {
+  width: 449px;
+  height: 449px;
+  display: block;
+}
+
+/*商品展示右侧区域*/
+#myDisplay .right {
+  position: absolute;
+  left: 500px;
+  top: 0;
+}
+#myDisplay .right .title {
+  position: absolute;
+  top: 19px;
+  width: 710px;
+}
+#myDisplay .right .title span {
+  position: absolute;
+  top: 34px;
+  font-family: "Arial";
+  font-size: 12px;
+  color: #c40000;
+}
+#myDisplay .right .price {
+  position: absolute;
+  top: 109px;
+  width: 710px;
+  height: 98px;
+  border-bottom: 1px solid #eeeeee;
+}
+#myDisplay .right .price .xiaoxi1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 333px;
+  height: 26px;
+  line-height: 26px;
+  background: url("../img/xiaoxikuang1.jpg") no-repeat 0 0;
+  padding-left: 10px;
+}
+#myDisplay .right .price .mall-price {
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+#myDisplay .right .price .price-number {
+  position: absolute;
+  left: 55px;
+  top: -10px;
+  color: #c40000;
+}
+#myDisplay .right .price .price-number b {
+  font-size: 32px;
+}
+#myDisplay .right .price #rent {
+  position: absolute;
+  left: 224px;
+  top: 7px;
+}
+#myDisplay .right .price .location {
+  position: absolute;
+  left: 0px;
+  top: 47px;
+}
+#myDisplay .right .price .location .city {
+  position: absolute;
+  left: 71px;
+  top: 0;
+  display: block;
+  width: 110px;
+  height: 16px;
+  font-size: 12px;
+  background: #c40000;
+  text-align: center;
+  padding-top: 0px;
+  color: #fff;
+}
+#myDisplay .right .deliver-goods {
+  position: absolute;
+  top: 207px;
+  border-bottom: 1px solid #eeeeee;
+  width: 710px;
+  height: 100px;
+}
+#myDisplay .right .deliver-goods .one {
+  position: absolute;
+  top: 26px;
+  width: 700px;
+  height: 16px;
+  line-height: 16px;
+}
+#myDisplay .right .deliver-goods .one .destination div {
+  float: left;
+  margin-right: 5px;
+}
+#myDisplay .right .deliver-goods .one .destination #distributionTime #xiaoxi2 {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: -82px;
+  width: 219px;
+  height: 31px;
+  text-align: center;
+  line-height: 36px;
+  background: url("../img/xiaoxikuang2.png") no-repeat 0 0;
+}
+#myDisplay .right .deliver-goods .two {
+  position: absolute;
+  top: 63px;
+  width: 300px;
+}
+#myDisplay .right .buy {
+  width: 710px;
+  height: 240px;
+  position: absolute;
+  top: 307px;
+}
+#myDisplay .right .buy .one {
+  position: absolute;
+  top: 26px;
+}
+#myDisplay .right .buy .one .introduces {
+  position: absolute;
+  top: 7px;
+  width: 40px;
+}
+#myDisplay .right .buy .one .web {
+  width: 138px;
+  height: 23px;
+  border: 2px solid #863177;
+  text-align: center;
+  line-height: 23px;
+  cursor: pointer;
+}
+#myDisplay .right .buy .one .web img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#myDisplay .right .buy .two {
+  position: absolute;
+  top: 77px;
+}
+#myDisplay .right .buy .two {
+  position: absolute;
+  top: 77px;
+}
+#myDisplay .right .buy .two .introduces {
+  position: absolute;
+  top: 7px;
+  width: 40px;
+}
+#myDisplay .right .buy .two #mallNum span {
+  float: left;
+}
+#myDisplay .right .buy .two #mallNum .mallNumStyle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+}
+#myDisplay .right .buy .two #mallNum .content {
+  width: 38px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+#myDisplay .right .buy .three {
+  position: absolute;
+  top: 135px;
+}
+#myDisplay .right .buy .three .flag {
+  color: #c40000;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#myDisplay .right .buyNowdiv {
+  position: absolute;
+  top: 480px;
+  width: 400px;
+}
+.buyNow {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: #c40000;
+}
+.buyNow:hover {
+  background: #d90000;
+}
+/*商品展示区域结束*/
+
+/*第二个导航条开始*/
+#twoNav {
+  width: 1210px;
+  height: 57px;
+  border-bottom: 3px solid #34383b;
+}
+#twoNav .nav {
+  display: block;
+  width: 96px;
+  height: 57px;
+  text-align: center;
+  line-height: 58px;
+  float: left;
+}
+#twoNav .select {
+  background: #34383b;
+  color: #fff;
+}
+#twoNav .nav:hover {
+  background: #34383b;
+  color: #fff;
+}
+#twoNav .buyNowdiv {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#twoNav .simple {
+  position: absolute;
+  left: 706px;
+  top: 29px;
+}
+#twoNav .simple .position span {
+  margin-right: 32px;
+}
+#twoNav .simple .wage {
+  position: absolute;
+  left: 162px;
+  top: 0;
+}
+#twoNav .simple .wage .price {
+  font-size: 30px;
+  position: absolute;
+  top: -18px;
+  left: 5px;
+  color: #666666;
+}
+/*第二个导航条结束*/
+/*个人简介和技能书区域开始*/
+#introduces {
+  width: 1210px;
+  height: 658px;
+  padding-top: 10px;
+}
+#introduces .left {
+  width: 594px;
+  height: 657px;
+  background: #8c0000;
+}
+#introduces .code-dog {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: 63px;
+  top: 45px;
+}
+#introduces .information {
+  position: absolute;
+  left: 302px;
+  top: 45px;
+}
+#introduces .left ul {
+  position: absolute;
+  left: 63px;
+  top: 201px;
+  width: 470px;
+  height: 300px;
+}
+#introduces .left ul li {
+  width: 470px;
+  height: 59px;
+  border-bottom: 1px solid #a9a9a9;
+  position: relative;
+}
+
+#introduces .left ul li div {
+  width: 59px;
+  height: 59px;
+}
+#introduces .left ul li .user {
+  background: url("../img/ico.png") no-repeat 0 0;
+}
+#introduces .left ul li .local {
+  background: url("../img/ico.png") no-repeat -236px 0;
+}
+#introduces .left ul li .edu {
+  background: url("../img/ico.png") no-repeat -177px 0;
+}
+#introduces .left ul li .work {
+  background: url("../img/ico.png") no-repeat -59px 0;
+}
+#introduces .left ul li .marry {
+  background: url("../img/ico.png") no-repeat -118px 0;
+}
+#introduces .left ul li p {
+  position: absolute;
+  left: 75px;
+  top: 0;
+  line-height: 59px;
+  color: #fff;
+}
+#introduces .left .github {
+  position: absolute;
+  top: 548px;
+  left: 63px;
+  width: 193px;
+  height: 60px;
+  background: url("../img/github.jpg");
+}
+#introduces .left .blog {
+  position: absolute;
+  top: 548px;
+  left: 340px;
+  width: 193px;
+  height: 60px;
+  background: url("../img/blog.jpg");
+}
+#introduces .left .select-github:hover {
+  background: url("../img/github-select.jpg");
+}
+#introduces .left .select-blog:hover {
+  background: url("../img/blog-select.jpg");
+}
+
+#introduces .right {
+  width: 606px;
+  height: 657px;
+  position: absolute;
+  top: 10px;
+  left: 604px;
+}
+#introduces .right p {
+  width: 606px;
+  height: 50px;
+  background: #3c3c3c;
+  line-height: 50px;
+  text-indent: 11px;
+  color: #fff;
+  font-size: 24px;
+}
+#introduces .right ul {
+  width: 606px;
+  height: 606px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: orange;
+}
+#introduces .right ul li {
+  width: 189px;
+  height: 189px;
+  background: #fff;
+  float: left;
+  line-height: 189px;
+  text-align: center;
+  cursor: move;
+  margin: 10px 0 0 10px;
+  display: inline;
+}
+#introduces .right ul li:hover {
+  background: #7cbaf8;
+}
+
+/*个人简介和技能书区域结束*/
+/*技能总结区域开始*/
+#skillsSummaryBack {
+  width: 100%;
+  height: 650px;
+  background: #efefef;
+}
+#skillsSummary {
+  width: 1210px;
+  height: 1000px;
+  position: relative;
+  top: 11px;
+}
+#skillsSummary .up .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 96px;
+  height: 620px;
+  background: #0099ff;
+}
+#skillsSummary .up .left p {
+  position: absolute;
+  left: 33px;
+  top: 200px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  color: #fff;
+}
+#skillsSummary .up .right {
+  position: absolute;
+  left: 105px;
+  top: 0;
+  width: 620px;
+  height: 620px;
+}
+#skillsSummary .up .right li {
+  width: 1104px;
+  height: 59px;
+  line-height: 59px;
+  background: #fff;
+  text-indent: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+#skillsSummary .up .right li:hover {
+  /*text-indent首行缩进的，效果的主要*/
+  text-indent: 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: 0 2px 1px #360;
+  background-color: #393;
+  /*下面是四套渐变的，没写欧朋的*/
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+}
+
+/*-webkit-transition;是动画出现的过度状态，0.3s all ease;代表0.3秒， 所有 安逸的*/
+/*-webkit-是谷歌跟苹果浏览器的私有前缀；moz是火狐浏览器的私有前缀，ms是IE，o是欧鹏浏览器*/
+/*动画效果*/
+@-webkit-keyframes moveTop {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-200%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-moz-keyframes moveTop {
+  from {
+    opacity: 0;
+    -moz-transform: translateY(-200%);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: translateY(0%);
+  }
+}
+@-ms-keyframes moveTop {
+  from {
+    opacity: 0;
+    -ms-transform: translateY(-200%);
+  }
+  to {
+    opacity: 1;
+    -ms-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes moveBottom {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(200%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-moz-keyframes moveBottom {
+  from {
+    opacity: 0;
+    -moz-transform: translateY(200%);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: translateY(0%);
+  }
+}
+@-ms-keyframes moveBottom {
+  from {
+    opacity: 0;
+    -ms-transform: translateY(200%);
+  }
+  to {
+    opacity: 1;
+    -ms-transform: translateY(0%);
+  }
+}
+/*技能总结区域结束*/
+
+/*作品展示区域开始*/
+.demo-list {
+  width: 1210px;
+  height: 300px;
+  background: #dddddd;
+  position: relative;
+  top: 8px;
+  left: 50%;
+  margin-left: -605px;
+  margin-bottom: 15px;
+}
+.online {
+  width: 1210px;
+  height: 260px;
+}
+
+.demo-list li {
+  position: relative;
+  width: 230px;
+  height: 240px;
+  background: #fff;
+  margin: 10px 0 0 10px;
+  float: left;
+  display: inline;
+}
+.demo-list li a {
+  color: #fff;
+}
+
+.demo-list li a .hot_info {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #0d9572;
+  filter: alpha(Opacity=80);
+  opacity: 0.8;
+  width: 230px;
+  height: 240px;
+  cursor: pointer;
+}
+
+.demo-list li a .hot_info h2 {
+  font-size: 20px;
+  margin: 6px 8px;
+  /*font-weight: normal;*/
+  text-align: center;
+  width: 214px;
+  height: 30px;
+  border-bottom: 5px solid #fff;
+}
+.demo-list li a .hot_info p {
+  margin: 8px 13px;
+}
+/*工作经历区域开始*/
+#menu {
+  position: relative;
+  margin-top: 50px;
+  border-top: 2px solid #999;
+  border-bottom: 1px solid #dddddd;
+}
+#menu .menuTop {
+  background: #f7f7f7;
+  padding-left: 8px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#menu .menu-child {
+  width: 100%;
+}
+
+#menu .menu-child h3 {
+  position: relative;
+  padding: 0 6px 0 36px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+#menu .menu-child h3 span {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+#menu .menu-child h3 span.bg1 {
+  background: #999;
+  background-position: -42px -28px;
+}
+
+#menu .menu-child h3 span.bg2 {
+  background: #dddddd;
+  background-position: -59px -28px;
+}
+#menu .menu-child .menu-child-body {
+  overflow: hidden;
+  border: 1px solid #dddddd;
+  border-top: none;
+  height: 100px;
+  display: none;
+  padding: 10px 10px 30px 36px;
+}
+#menu .menu-child .select {
+  display: block;
+}
+#menu .menu-child .menu-child-body p {
+  font-size: 14px;
+}
+/*工作经历区域结束*/
+
+/*自我评价区域开始*/
+#evaluation {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  height: 300px;
+  background: #1f1f1f;
+}
+#evaluation .middle {
+  width: 1230px;
+  height: 280px;
+  position: relative;
+}
+#evaluation .middle li {
+  width: 390px;
+  height: 200px;
+  color: #fff;
+  float: left;
+  margin-top: 50px;
+  margin-right: 18px;
+}
+#evaluation .middle li div {
+  position: relative;
+  top: 20px;
+}
+#evaluation .middle li a {
+  display: block;
+  margin-bottom: 10px;
+  color: #ccc;
+  cursor: pointer;
+  text-align: justify;
+}
+#evaluation .middle li a:hover {
+  color: #e58994;
+}
+/*自我评价区域结束*/
+
+/*默认的全局使用样式*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+.clear {
+  clear: both;
+}
+.introduces {
+  font-size: 12px;
+  color: #999999;
+}
+/*下面是商品详情页的附加字样式*/
+.blue-font {
+  font-size: 12px;
+  color: #6388cc;
+  position: relative;
+  cursor: pointer;
+}
+.blue-font a {
+  width: 12px;
+  text-align: center;
+  height: 12px;
+  line-height: 12px;
+  display: block;
+  background: #6388cc;
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  left: 58px;
+}
+.little-font {
+  font-size: 12px;
+}
+.right-right {
+  position: absolute;
+  top: 0;
+  left: 54px;
+  width: 600px;
+}
+/*兼容的居中布局*/
+.middle {
+  position: relative;
+  width: 1210px;
+  left: 50%;
+  margin-left: -605px;
+}
+/*兼容60px的标示*/
+.middle-clear-flag {
+  position: relative;
+  width: 1210px;
+  height: 60px;
+}
+.title-flag {
+  width: 1210px;
+  height: 72px;
+  text-align: center;
+  line-height: 72px;
+  position: relative;
+  left: 50%;
+  margin-left: -605px;
+  background: #3c3c3c;
+  color: #fff;
+  font-size: 30px;
+}
