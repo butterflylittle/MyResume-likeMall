@@ -5,3 +5,5 @@
 ### 兼容到 IE56789，全兼容，优雅降低方案
 
 ### 预览效果： https://butterflylittle.github.io/MyResume-likeMall/
+
+预览：<img src="./img/page.png">
